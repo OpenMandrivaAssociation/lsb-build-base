@@ -9,6 +9,7 @@ Group: 		Development/C
 Source: 	ftp://ftp.freestandards.org/pub/lsb/lsbdev/released-3.1.0/source/lsb-build-base-%{version}.tar.bz2
 URL:    	http://www.freestandards.org/download/#lsbdev
 Patch0:         %{name}-rpmlint.patch
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 Obsoletes: 	lsbdev-base
 
 %description
