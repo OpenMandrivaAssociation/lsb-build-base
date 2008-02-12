@@ -13,7 +13,6 @@ BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 Obsoletes: 	lsbdev-base
 
 %description
-
 The LSB Build environment base package provides stub libraries and
 header files. These can be used to build LSB compliant applications.
 Note that the version number of the package refers to the version
@@ -27,7 +26,6 @@ Provides:       %{name} lsbdev-base-devel
 Obsoletes: 	lsbdev-base-devel
 
 %description -n %{name}-devel
-
 The LSB Build environment base package provides stub libraries and
 header files. These can be used to build LSB compliant applications.
 Note that the version number of the package refers to the version
