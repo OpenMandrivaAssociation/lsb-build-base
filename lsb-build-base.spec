@@ -3,7 +3,7 @@
 Summary: 	LSB Build environment base package
 Name: 		lsb-build-base
 Version: 	3.1.1
-Release: 	%mkrel 4
+Release: 	%mkrel 5
 License: 	LGPL
 Group: 		Development/C
 Source: 	ftp://ftp.freestandards.org/pub/lsb/lsbdev/released-3.1.0/source/lsb-build-base-%{version}.tar.bz2
