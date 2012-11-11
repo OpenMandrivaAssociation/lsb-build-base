@@ -1,0 +1,13 @@
+--- lsb-build-base-2.0.3/Makefile.rpmlint	2003-11-20 13:38:47.000000000 -0500
++++ lsb-build-base-2.0.3/Makefile	2004-07-26 12:49:43.458310104 -0400
+@@ -1,8 +1,8 @@
+ export BINDIR=/bin
+ export MANDIR=/man
+ export INSTALL_ROOT=/usr/local
+-export INCLUDEDIR=/include
+-export LIBDIR=/lib$(LIB64)
++export INCLUDEDIR=/include/$(SUBDIR)
++export LIBDIR=/lib$(LIB64)/$(SUBDIR)
+ 
+ all:
+ 	cd build_env/stub_libs && $(MAKE) 
