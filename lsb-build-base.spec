@@ -3,7 +3,7 @@
 Summary: 	LSB Build environment base package
 Name: 		lsb-build-base
 Version: 	3.1.1
-Release: 	%mkrel 5
+Release: 	%mkrel 4
 License: 	LGPL
 Group: 		Development/C
 Source: 	ftp://ftp.freestandards.org/pub/lsb/lsbdev/released-3.1.0/source/lsb-build-base-%{version}.tar.bz2
@@ -56,4 +56,52 @@ rm -rf $RPM_BUILD_ROOT
 %doc README Licence
 %{_libdir}/%{name}
 %{_includedir}/%{name}
+
+
+
+%changelog
+* Fri Sep 04 2009 Thierry Vignaud <tvignaud@mandriva.com> 3.1.1-4mdv2010.0
++ Revision: 429871
+- rebuild
+
+* Mon Jul 28 2008 Thierry Vignaud <tvignaud@mandriva.com> 3.1.1-3mdv2009.0
++ Revision: 251445
+- rebuild
+- fix spacing at top of description
+
+* Thu Jan 03 2008 Olivier Blin <oblin@mandriva.com> 3.1.1-1mdv2008.1
++ Revision: 140933
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Mon Jun 12 2006 Stew Benedict <sbenedict@mandriva.com> 3.1.1-1mdv2007.0
+- 3.1.1
+
+* Thu Jun 08 2006 Olivier Blin <oblin@mandriva.com> 3.0.0-2mdv2007.0
+- add libXi.so and librt.so in provides_exceptions (should fix auto installs,
+  and allow xsetup.d programs to start in live as a side effect)
+
+* Wed Jun 08 2005 Stew Benedict <sbenedict@mandriva.com> 3.0.0-1mdk
+- 3.0 snapshot (not final)
+
+* Thu Sep 02 2004 Stew Benedict <sbenedict@mandrakesoft.com> 2.0.4-2mdk
+- provides_exceptions from Gwenole
+
+* Thu Aug 26 2004 Stew Benedict <sbenedict@mandrakesoft.com> 2.0.4-1mdk
+- 2.0.4, 64bit fixes
+
+* Thu Aug 26 2004 Stew Benedict <sbenedict@mandrakesoft.com> 2.0.3-2mdk
+- fix %%install stanza
+
+* Mon Jul 26 2004 Stew Benedict <sbenedict@mandrakesoft.com> 2.0.3-1mdk
+- repackage for Mandrakelinux
+- restructure dirs for rpmlint(patch0), split into -devel 
+- use doc macro, License
+
+* Thu Jun 10 2004 Mats Wichmann <mats@freestandards.org>
+- make symlinks for curses header and library
+- clean out excess directories in header tree
 
